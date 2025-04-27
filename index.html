@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-color: wheat;
+        }
+        #form{
+            width: 250px;
+            height: 580px;
+            border: 2px solid black;
+            border-radius: 5px;
+            display: block;
+            text-align:left;
+            padding: 5px;
+            align-items: inherit;
+            margin-left: 700px;margin-top: 100px;
+            background-color: lightcoral;
+            color: blue;
+        }
+        #checker{
+            display: block;
+            margin-top: 20px;
+            margin-left:5px;
+            background-color: lightskyblue;
+        }
+        .innerdiv{
+            display: inline-block;
+            justify-content: space-around;
+        }
+        .labelbox{
+            font-weight: bold;
+            font-size: medium; 
+        }
+        input{
+            width: 230px;
+            height: 20px;
+            margin: 5px;
+            background-color: lightskyblue;
+        }
+        label{
+            margin: 5px;
+        }
+        h2{
+            margin-left: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        span{
+            margin: 10px;
+        }
+        #buttonsub{
+            text-align: center;
+            display: block;
+        }
+        #submit{
+            width: 235px;
+            height: 30px;
+            background-color: yellowgreen;
+        }
+        #otpgen{
+            width: 235px;
+            height: 30px;
+            background-color: yellowgreen;
+            margin-left: 5px;
+        }
+        .error{
+            width: 220px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body >
+    <form id="form">
+        <h2>Regestration Form</h2> 
+        <div class="innerdiv">
+        <label class="labelbox" for="Email">Enter Your Email-Id : </label>
+        <input id="email" type="email" placeholder="Enter Your E-mail id">
+        <span id="error" id="emailError"></span>
+    </div class="innerdiv">
+        <div>
+        <label class="labelbox" for="Password">Enter Your password : </label>
+        <input id="password" type="password" placeholder="Enter Your Password">
+        <span class="Error" id="passwordError"></span>
+    </div class="innerdiv">
+        <div>
+        <label class="labelbox" for="confirmPassword">Re-Enter Your Password : </label>
+        <input type="password" placeholder="Re-Enter Your Password">
+        <span class="error" id="confirmpasswordError"></span>
+    </div class="innerdiv">
+        <div>
+        <label class="labelbox" for="mobNumber">Enter Your Mobile No. : </label>
+        <input type="number" placeholder="Enter Your Mobile No.">
+        <span class="error" id="mobnumberError"></span>
+    </div class="innerdiv">
+        <div>
+        <label class="labelbox" for="Number">Enter Your Age : </label>
+        <input type="number" placeholder="Enter Your Age">
+        <span class="error" id="ageError"></span>
+    </div class="innerdiv">
+        <div class="innerdiv">
+        <label class="labelbox" for="Otp">Enter OTP : </label>
+        <input type="number" placeholder="Enter Otp">
+        <button id ="otpgen" type="submit">Generate Otp</button>
+        <span class="error" id="submitError"></span>
+    </div>
+        <input id="checker" type="checkbox" placeholder="a">
+
+        <div id="buttonsub">
+            <p> Terms and Conditions <br> T&C Applies</p>
+            <button id="submit" type="submit" >submit</button>
+        </div>
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>
